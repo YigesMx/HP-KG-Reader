@@ -164,3 +164,16 @@ cython_debug/
 
 #refs
 refs/
+
+#presentation
+*.pptx
+
+# secrets
+utils/llm/config.py
+
+# crawler
+bkp/
+
+# jena & jena-fuseki server
+apache-*/
+data/tdb/

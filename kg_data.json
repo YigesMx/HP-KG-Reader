@@ -1,0 +1,566 @@
+{
+    "categories": [
+        {
+            "id": "0", 
+            "name": "角色", 
+            "url": "http://kg.course/harry_potter/角色"
+        }, 
+        {
+            "id": "1", 
+            "name": "学院", 
+            "url": "http://kg.course/harry_potter/学院"
+        }, 
+        {
+            "id": "2", 
+            "name": "组织", 
+            "url": "http://kg.course/harry_potter/组织"
+        }
+    ], 
+    "links": [
+        {
+            "source": 0, 
+            "source_name": "哈利·波特", 
+            "target": 1, 
+            "target_name": "金妮·韦斯莱", 
+            "value": "http://kg.course/harry_potter/关系#妻子"
+        }, 
+        {
+            "source": 0, 
+            "source_name": "哈利·波特", 
+            "target": 2, 
+            "target_name": "小天狼星·布莱克", 
+            "value": "http://kg.course/harry_potter/关系#教父"
+        }, 
+        {
+            "source": 0, 
+            "source_name": "哈利·波特", 
+            "target": 3, 
+            "target_name": "詹姆·小天狼星·波特", 
+            "value": "http://kg.course/harry_potter/关系#儿子"
+        }, 
+        {
+            "source": 0, 
+            "source_name": "哈利·波特", 
+            "target": 5, 
+            "target_name": "凤凰社", 
+            "value": "http://kg.course/harry_potter/关系#从属"
+        }, 
+        {
+            "source": 1, 
+            "source_name": "金妮·韦斯莱", 
+            "target": 0, 
+            "target_name": "哈利·波特", 
+            "value": "http://kg.course/harry_potter/关系#丈夫"
+        }, 
+        {
+            "source": 1, 
+            "source_name": "金妮·韦斯莱", 
+            "target": 3, 
+            "target_name": "詹姆·小天狼星·波特", 
+            "value": "http://kg.course/harry_potter/关系#儿子"
+        }, 
+        {
+            "source": 1, 
+            "source_name": "金妮·韦斯莱", 
+            "target": 4, 
+            "target_name": "格兰芬多学院", 
+            "value": "http://kg.course/harry_potter/关系#学院"
+        }, 
+        {
+            "source": 1, 
+            "source_name": "金妮·韦斯莱", 
+            "target": 5, 
+            "target_name": "凤凰社", 
+            "value": "http://kg.course/harry_potter/关系#从属"
+        }, 
+        {
+            "source": 2, 
+            "source_name": "小天狼星·布莱克", 
+            "target": 4, 
+            "target_name": "格兰芬多学院", 
+            "value": "http://kg.course/harry_potter/关系#学院"
+        }, 
+        {
+            "source": 2, 
+            "source_name": "小天狼星·布莱克", 
+            "target": 5, 
+            "target_name": "凤凰社", 
+            "value": "http://kg.course/harry_potter/关系#从属"
+        }, 
+        {
+            "source": 3, 
+            "source_name": "詹姆·小天狼星·波特", 
+            "target": 0, 
+            "target_name": "哈利·波特", 
+            "value": "http://kg.course/harry_potter/关系#父亲"
+        }, 
+        {
+            "source": 3, 
+            "source_name": "詹姆·小天狼星·波特", 
+            "target": 1, 
+            "target_name": "金妮·韦斯莱", 
+            "value": "http://kg.course/harry_potter/关系#母亲"
+        }, 
+        {
+            "source": 3, 
+            "source_name": "詹姆·小天狼星·波特", 
+            "target": 4, 
+            "target_name": "格兰芬多学院", 
+            "value": "http://kg.course/harry_potter/关系#学院"
+        }
+    ], 
+    "nodes": [
+        {
+            "category": 0, 
+            "id": "0", 
+            "name": "哈利·波特", 
+            "properties": [
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "哈利·波特"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#name"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "1980年7月31日，戈德里克山谷，英格兰西南部，英国"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#出生"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "人类"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#物种"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "男"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#性别"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "乌黑"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#头发颜色"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "浅色"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#皮肤颜色"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "已婚"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#婚姻状况"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "傲罗办公室主任"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#职业"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "黑魔法防御术兼职讲师"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#职业"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "翠绿"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#眼睛颜色"
+                    }
+                }
+            ], 
+            "stress": true, 
+            "symbol": "roundRect", 
+            "symbolSize": 19.667409935585727, 
+            "url": "http://kg.course/harry_potter/角色#哈利·波特", 
+            "value": 6
+        }, 
+        {
+            "category": 0, 
+            "id": "1", 
+            "name": "金妮·韦斯莱", 
+            "properties": [
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "金妮·韦斯莱"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#name"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "1981年8月11日"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#出生"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "人类"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#物种"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "女"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#性别"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "火红"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#头发颜色"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "浅色"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#皮肤颜色"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "已婚 (2014年时)"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#婚姻状况"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "霍利黑德哈比队魁地奇球员"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#职业"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "《预言家日报》魁地奇资深记者"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#职业"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "褐色"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#眼睛颜色"
+                    }
+                }
+            ], 
+            "stress": true, 
+            "symbol": "roundRect", 
+            "symbolSize": 19.667409935585727, 
+            "url": "http://kg.course/harry_potter/角色#金妮·韦斯莱", 
+            "value": 6
+        }, 
+        {
+            "category": 0, 
+            "id": "2", 
+            "name": "小天狼星·布莱克", 
+            "properties": [
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "小天狼星·布莱克"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#name"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "1959年11月3日英格兰"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#出生"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "人类"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#物种"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "男性"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#性别"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "黑色"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#头发颜色"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "浅色"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#皮肤颜色"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "单身"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#婚姻状况"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "1996年6月18日 （36岁）英国魔法部"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#逝世"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "灰色"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#眼睛颜色"
+                    }
+                }
+            ], 
+            "stress": true, 
+            "symbol": "roundRect", 
+            "symbolSize": 15.836838258418902, 
+            "url": "http://kg.course/harry_potter/角色#小天狼星·布莱克", 
+            "value": 3
+        }, 
+        {
+            "category": 0, 
+            "id": "3", 
+            "name": "詹姆·小天狼星·波特", 
+            "properties": [
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "詹姆·小天狼星·波特"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#name"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "2003年或2004年"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#出生"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "人类"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#物种"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "男"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#性别"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "黑色"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#头发颜色"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "浅色"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#皮肤颜色"
+                    }
+                }, 
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "褐色"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#眼睛颜色"
+                    }
+                }
+            ], 
+            "stress": true, 
+            "symbol": "roundRect", 
+            "symbolSize": 18.560887389433113, 
+            "url": "http://kg.course/harry_potter/角色#詹姆·小天狼星·波特", 
+            "value": 5
+        }, 
+        {
+            "category": 1, 
+            "id": "4", 
+            "name": "格兰芬多学院", 
+            "properties": [
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "格兰芬多学院"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#name"
+                    }
+                }
+            ], 
+            "stress": true, 
+            "symbol": "roundRect", 
+            "symbolSize": 15.836838258418902, 
+            "url": "http://kg.course/harry_potter/学院#格兰芬多学院", 
+            "value": 3
+        }, 
+        {
+            "category": 2, 
+            "id": "5", 
+            "name": "凤凰社", 
+            "properties": [
+                {
+                    "obj": {
+                        "type": "literal", 
+                        "value": "凤凰社"
+                    }, 
+                    "pred": {
+                        "type": "uri", 
+                        "value": "http://kg.course/harry_potter/关系#name"
+                    }
+                }
+            ], 
+            "stress": true, 
+            "symbol": "roundRect", 
+            "symbolSize": 15.836838258418902, 
+            "url": "http://kg.course/harry_potter/组织#凤凰社", 
+            "value": 3
+        }
+    ]
+}

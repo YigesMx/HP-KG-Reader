@@ -1,0 +1,314 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix hp: <http://kg.course/harry_potter/> .
+
+@prefix hp_relation: <http://kg.course/harry_potter/关系> .
+@prefix hp_class: <http://kg.course/harry_potter/类> .
+@prefix hp_character: <http://kg.course/harry_potter/角色> .
+@prefix hp_group: <http://kg.course/harry_potter/组织> .
+@prefix hp_house: <http://kg.course/harry_potter/学院> .
+@prefix hp_blood: <http://kg.course/harry_potter/血统> .
+
+@prefix hp_relation_: <http://kg.course/harry_potter/关系#> .
+@prefix hp_character_: <http://kg.course/harry_potter/角色#> .
+@prefix hp_group_: <http://kg.course/harry_potter/组织#> .
+@prefix hp_house_: <http://kg.course/harry_potter/学院#> .
+@prefix hp_blood_: <http://kg.course/harry_potter/血统#> .
+
+# 类定义
+hp_relation: a owl:Class .
+hp_character: a owl:Class .
+hp_group: a owl:Class .
+hp_house: a owl:Class .
+hp_blood: a owl:Class .
+
+hp_character: a hp_class: .
+hp_group: a hp_class: .
+hp_house: a hp_class: .
+hp_blood: a hp_class: .
+
+# 属性定义
+hp_relation_:name rdf:type owl:DatatypeProperty ;
+    rdfs:domain [ rdf:type owl:Class ; owl:unionOf (hp_character: hp_group: hp_house: hp_blood:) ] ;
+    rdfs:range xsd:string ;
+    a hp_relation: .
+
+hp_relation_:出生 rdf:type owl:DatatypeProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range xsd:string ;
+    a hp_relation: .
+
+hp_relation_:逝世 rdf:type owl:DatatypeProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range xsd:string ;
+    a hp_relation: .
+
+hp_relation_:血统 rdf:type owl:DatatypeProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range hp_blood: ;
+    a hp_relation: .
+
+hp_relation_:物种 rdf:type owl:DatatypeProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range xsd:string ;
+    a hp_relation: .
+
+hp_relation_:性别 rdf:type owl:DatatypeProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range xsd:string ;
+    a hp_relation: .
+
+hp_relation_:身高 rdf:type owl:DatatypeProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range xsd:integer ;
+    a hp_relation: .
+
+hp_relation_:头发颜色 rdf:type owl:DatatypeProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range xsd:string ;
+    a hp_relation: .
+
+hp_relation_:眼睛颜色 rdf:type owl:DatatypeProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range xsd:string ;
+    a hp_relation: .
+
+hp_relation_:皮肤颜色 rdf:type owl:DatatypeProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range xsd:string ;
+    a hp_relation: .
+
+hp_relation_:从属 rdf:type owl:ObjectProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range hp_group: ;
+    a hp_relation: .
+
+hp_relation_:学院 rdf:type owl:ObjectProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range hp_house: ;
+    a hp_relation: .
+
+hp_relation_:婚姻状况 rdf:type owl:DatatypeProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range xsd:string ;
+    a hp_relation: .
+
+hp_relation_:职业 rdf:type owl:DatatypeProperty ;
+    rdfs:domain hp_character: ;
+    rdfs:range xsd:string ;
+    a hp_relation: .
+
+hp_relation_:母系祖先 a hp_relation:.
+hp_relation_:岳父 a hp_relation:.
+hp_relation_:外孙 a hp_relation:.
+hp_relation_:儿媳 a hp_relation:.
+hp_relation_:妻子或堂姐 a hp_relation:.
+hp_relation_:外公 a hp_relation:.
+hp_relation_:弟弟 a hp_relation:.
+hp_relation_:襟兄 a hp_relation:.
+hp_relation_:孪生兄弟 a hp_relation:.
+hp_relation_:养女 a hp_relation:.
+hp_relation_:后裔 a hp_relation:.
+hp_relation_:第三任女婿 a hp_relation:.
+hp_relation_:父系祖先 a hp_relation:.
+hp_relation_:舅舅 a hp_relation:.
+hp_relation_:侄子 a hp_relation:.
+hp_relation_:小舅 a hp_relation:.
+hp_relation_:第一任妻子 a hp_relation:.
+hp_relation_:孙辈 a hp_relation:.
+hp_relation_:表弟 a hp_relation:.
+hp_relation_:丈夫或二堂弟 a hp_relation:.
+hp_relation_:重孙 a hp_relation:.
+hp_relation_:双胞胎妹妹 a hp_relation:.
+hp_relation_:大舅 a hp_relation:.
+hp_relation_:姊姊 a hp_relation:.
+hp_relation_:弟媳 a hp_relation:.
+hp_relation_:表哥或姐夫 a hp_relation:.
+hp_relation_:小姑 a hp_relation:.
+hp_relation_:内弟 a hp_relation:.
+hp_relation_:妻子 a hp_relation:.
+hp_relation_:姨妈 a hp_relation:.
+hp_relation_:孙子 a hp_relation:.
+hp_relation_:孙媳婦 a hp_relation:.
+hp_relation_:外甥孙 a hp_relation:.
+hp_relation_:婆婆 a hp_relation:.
+hp_relation_:养母 a hp_relation:.
+hp_relation_:曾外甥孙 a hp_relation:.
+hp_relation_:姐夫 a hp_relation:.
+hp_relation_:丈夫 a hp_relation:.
+hp_relation_:养妹 a hp_relation:.
+hp_relation_:侄子或教子 a hp_relation:.
+hp_relation_:伯父 a hp_relation:.
+hp_relation_:姨祖母 a hp_relation:.
+hp_relation_:养父 a hp_relation:.
+hp_relation_:公公 a hp_relation:.
+hp_relation_:堂姐妹 a hp_relation:.
+hp_relation_:第三任丈夫 a hp_relation:.
+hp_relation_:姑母 a hp_relation:.
+hp_relation_:孙媳 a hp_relation:.
+hp_relation_:前妻 a hp_relation:.
+hp_relation_:長子 a hp_relation:.
+hp_relation_:第二任妻子 a hp_relation:.
+hp_relation_:伯母 a hp_relation:.
+hp_relation_:岳母，原姓布莱克 a hp_relation:.
+hp_relation_:外甥女 a hp_relation:.
+hp_relation_:父系，姨妈 a hp_relation:.
+hp_relation_:妹妹 a hp_relation:.
+hp_relation_:孙女 a hp_relation:.
+hp_relation_:大姑或堂姐 a hp_relation:.
+hp_relation_:高祖父 a hp_relation:.
+hp_relation_:表姐 a hp_relation:.
+hp_relation_:同母异父弟弟 a hp_relation:.
+hp_relation_:侄子或外甥 a hp_relation:.
+hp_relation_:义姐 a hp_relation:.
+hp_relation_:内兄 a hp_relation:.
+hp_relation_:表妹 a hp_relation:.
+hp_relation_:同母异父的弟弟 a hp_relation:.
+hp_relation_:养子 a hp_relation:.
+hp_relation_:叔父 a hp_relation:.
+hp_relation_:双胞胎姐姐 a hp_relation:.
+hp_relation_:女儿 a hp_relation:.
+hp_relation_:义兄 a hp_relation:.
+hp_relation_:母亲 a hp_relation:.
+hp_relation_:祖父 a hp_relation:.
+hp_relation_:妹夫 a hp_relation:.
+hp_relation_:姑妈 a hp_relation:.
+hp_relation_:远房亲戚 a hp_relation:.
+hp_relation_:儿子 a hp_relation:.
+hp_relation_:双胞胎哥哥 a hp_relation:.
+hp_relation_:曾孙 a hp_relation:.
+hp_relation_:外祖母 a hp_relation:.
+hp_relation_:祖翁 a hp_relation:.
+hp_relation_:被收养的哥哥 a hp_relation:.
+hp_relation_:表兄 a hp_relation:.
+hp_relation_:外甥或教子 a hp_relation:.
+hp_relation_:舅父 a hp_relation:.
+hp_relation_:表兄弟 a hp_relation:.
+hp_relation_:外祖父 a hp_relation:.
+hp_relation_:表外甥女 a hp_relation:.
+hp_relation_:双胞胎弟弟 a hp_relation:.
+hp_relation_:大姑 a hp_relation:.
+hp_relation_:姨甥 a hp_relation:.
+hp_relation_:舅母 a hp_relation:.
+hp_relation_:婶婶 a hp_relation:.
+hp_relation_:教父 a hp_relation:.
+hp_relation_:姐夫或二表弟 a hp_relation:.
+hp_relation_:外甥 a hp_relation:.
+hp_relation_:义妹 a hp_relation:.
+hp_relation_:远亲 a hp_relation:.
+hp_relation_:外甥孙女 a hp_relation:.
+hp_relation_:舅嫂 a hp_relation:.
+hp_relation_:可能存在关系 a hp_relation:.
+hp_relation_:嫂子 a hp_relation:.
+hp_relation_:声称的父亲 a hp_relation:.
+hp_relation_:姐姐 a hp_relation:.
+hp_relation_:姑婆 a hp_relation:.
+hp_relation_:同母异父的姐姐 a hp_relation:.
+hp_relation_:舅舅或教父 a hp_relation:.
+hp_relation_:阿姨 a hp_relation:.
+hp_relation_:父系或母系，曾曾祖父 a hp_relation:.
+hp_relation_:祖母 a hp_relation:.
+hp_relation_:小姨 a hp_relation:.
+hp_relation_:表姐妹 a hp_relation:.
+hp_relation_:姑父 a hp_relation:.
+hp_relation_:父系，叔叔 a hp_relation:.
+hp_relation_:小舅或堂弟 a hp_relation:.
+hp_relation_:表外甥 a hp_relation:.
+hp_relation_:姐姐或妹妹 a hp_relation:.
+hp_relation_:侄女婿 a hp_relation:.
+hp_relation_:外甥媳婦 a hp_relation:.
+hp_relation_:姨父 a hp_relation:.
+hp_relation_:可能是后裔 a hp_relation:.
+hp_relation_:侄孙 a hp_relation:.
+hp_relation_:大姨 a hp_relation:.
+hp_relation_:外婆 a hp_relation:.
+hp_relation_:叔叔 a hp_relation:.
+hp_relation_:外孙女 a hp_relation:.
+hp_relation_:继父 a hp_relation:.
+hp_relation_:外甥孙媳婦 a hp_relation:.
+hp_relation_:妹夫或襟弟 a hp_relation:.
+hp_relation_:堂兄弟 a hp_relation:.
+hp_relation_:同母异父哥哥 a hp_relation:.
+hp_relation_:可能是祖先 a hp_relation:.
+hp_relation_:侄女 a hp_relation:.
+hp_relation_:父亲 a hp_relation:.
+hp_relation_:祖先 a hp_relation:.
+hp_relation_:兄弟 a hp_relation:.
+hp_relation_:姑姑 a hp_relation:.
+hp_relation_:第一任丈夫 a hp_relation:.
+hp_relation_:女婿 a hp_relation:.
+hp_relation_:岳母 a hp_relation:.
+hp_relation_:养外孙 a hp_relation:.
+hp_relation_:大舅子 a hp_relation:.
+hp_relation_:曾孙女 a hp_relation:.
+hp_relation_:哥哥 a hp_relation:.
+hp_relation_:表哥 a hp_relation:.
+
+
+# 定义关系属性
+# hp_relation_:下属有  owl:inverseOf hp_relation_:从属 .
+# hp_relation_:有学员  owl:inverseOf hp_relation_:学院 .
+
+hp_relation_:父系祖先  rdf:type owl:TransitiveProperty .
+hp_relation_:祖父  rdfs:subPropertyOf hp_relation_:父系祖先 .
+hp_relation_:父亲  rdfs:subPropertyOf hp_relation_:父系祖先 ;
+    owl:inverseOf hp_relation:儿子 .
+hp_relation_:母亲  owl:inverseOf hp_relation_:女儿 .
+hp_relation_:弟弟  owl:inverseOf hp_relation_:哥哥 .
+hp_relation_:姑父  rdfs:subPropertyOf hp_relation_:叔叔 .
+hp_relation_:姑姑  rdfs:subPropertyOf hp_relation_:阿姨 .
+hp_relation_:表兄弟  rdf:type owl:SymmetricProperty .
+hp_relation_:表弟  rdfs:subPropertyOf hp_relation_:表兄弟 .
+hp_relation_:表姐妹  rdfs:subPropertyOf hp_relation_:表兄弟 .
+hp_relation_:妻子  owl:inverseOf hp_relation_:丈夫 .
+hp_relation_:儿子  owl:inverseOf hp_relation_:父亲 .
+hp_relation_:孙子  rdfs:subPropertyOf hp_relation_:后裔 .
+hp_relation_:孙女  rdfs:subPropertyOf hp_relation_:后裔 .
+hp_relation_:岳父  owl:inverseOf hp_relation_:女婿 .
+hp_relation_:姐姐  owl:inverseOf hp_relation_:妹妹 .
+hp_relation_:岳母  owl:inverseOf hp_relation_:儿媳 .
+hp_relation_:妹夫  owl:inverseOf hp_relation_:姐夫 .
+hp_relation_:丈夫  owl:inverseOf hp_relation_:妻子 .
+hp_relation_:叔叔  rdfs:subPropertyOf hp_relation_:父系祖先 .
+hp_relation_:祖母  rdfs:subPropertyOf hp_relation_:父系祖先 .
+hp_relation_:儿媳  owl:inverseOf hp_relation_:岳母 .
+hp_relation_:女婿  owl:inverseOf hp_relation_:岳父 .
+hp_relation_:女儿  owl:inverseOf hp_relation_:母亲 .
+hp_relation_:外孙  rdfs:subPropertyOf hp_relation_:后裔 .
+hp_relation_:外孙女  rdfs:subPropertyOf hp_relation_:后裔 .
+hp_relation_:外祖父  rdfs:subPropertyOf hp_relation_:祖先 .
+hp_relation_:外祖母  rdfs:subPropertyOf hp_relation_:祖先 .
+hp_relation_:大舅子  rdfs:subPropertyOf hp_relation_:叔叔 .
+hp_relation_:内弟  rdfs:subPropertyOf hp_relation_:弟弟 .
+# hp_relation_:外甥或教子  rdf:type owl:SymmetricProperty .
+hp_relation_:外甥  rdfs:subPropertyOf hp_relation_:外甥或教子 .
+hp_relation_:外甥女  rdfs:subPropertyOf hp_relation_:外甥或教子 .
+hp_relation_:哥哥  owl:inverseOf hp_relation_:弟弟 .
+hp_relation_:舅舅  rdfs:subPropertyOf hp_relation_:叔叔 .
+hp_relation_:嫂子  owl:inverseOf hp_relation_:姐夫 .
+hp_relation_:侄女  rdfs:subPropertyOf hp_relation_:外甥或教子 .
+hp_relation_:侄子  rdfs:subPropertyOf hp_relation_:外甥或教子 .
+hp_relation_:公公  owl:inverseOf hp_relation_:儿媳 .
+hp_relation_:小姑  rdfs:subPropertyOf hp_relation_:姑姑 .
+# hp_relation_:侄子或教子  rdf:type owl:SymmetricProperty .
+hp_relation_:伯父  rdfs:subPropertyOf hp_relation_:叔叔 .
+hp_relation_:堂兄弟  rdf:type owl:SymmetricProperty .
+hp_relation_:内兄  rdfs:subPropertyOf hp_relation_:哥哥 .
+hp_relation_:姨妈  rdfs:subPropertyOf hp_relation_:阿姨 .
+hp_relation_:姨父  rdfs:subPropertyOf hp_relation_:叔叔 .
+hp_relation_:表哥  rdfs:subPropertyOf hp_relation_:表兄弟 .
+hp_relation_:远房亲戚  rdf:type owl:SymmetricProperty .
+hp_relation_:表妹  rdfs:subPropertyOf hp_relation_:表兄弟 .
+hp_relation_:外公  rdfs:subPropertyOf hp_relation_:外祖父 .
+# hp_relation_:舅舅或教父  rdf:type owl:SymmetricProperty .
+hp_relation_:舅母  owl:inverseOf hp_relation_:姐夫 .
+hp_relation_:表姐  rdfs:subPropertyOf hp_relation_:表兄弟 .
+hp_relation_:表兄  rdfs:subPropertyOf hp_relation_:表兄弟 .
+hp_relation_:兄弟  rdf:type owl:SymmetricProperty .
+hp_relation_:同母异父的弟弟  rdfs:subPropertyOf hp_relation_:弟弟 ;
+    owl:inverseOf hp_relation_:同母异父的哥哥 .
+hp_relation_:同母异父的哥哥  rdfs:subPropertyOf hp_relation_:哥哥 .
+hp_relation_:可能存在关系  rdf:type owl:SymmetricProperty .

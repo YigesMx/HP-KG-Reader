@@ -1,0 +1,48 @@
+@prefix :      <http://base/#> .
+@prefix tdb:   <http://jena.hpl.hp.com/2008/tdb#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ja:    <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fuseki: <http://jena.apache.org/fuseki#> .
+ 
+ 
+:service1        a                fuseki:Service ;
+fuseki:dataset                    <#dataset> ;
+fuseki:name                       "hp_kg" ;
+fuseki:serviceQuery               "query" , "sparql" ;
+fuseki:serviceReadGraphStore      "get" ;
+fuseki:serviceReadWriteGraphStore "data" ;
+fuseki:serviceUpdate              "update" ;
+fuseki:serviceUpload              "upload" .
+ 
+ 
+<#dataset> rdf:type ja:RDFDataset ;
+    ja:defaultGraph <#model_inf> ;
+    .
+<#model_inf> rdf:type ja:InfModel ;
+ja:baseModel <#baseModel> ;
+ja:reasoner [
+    ja:reasonerURL <http://jena.hpl.hp.com/2003/OWLFBRuleReasoner>
+    # ja:reasonerURL <http://jena.hpl.hp.com/2003/GenericRuleReasoner> ;
+    # ja:rulesFrom <file:///D:/jena/apache-jena-fuseki-3.16.0/run/databases/rules.ttl> ;
+] ;
+.
+
+<#baseModel> rdf:type ja:UnionModel;
+ja:subModel <#ontology>;
+ja:rootModel <#tdbGraph>;
+.
+ 
+<#ontology> rdf:type ja:MemoryModel;
+ja:content [ja:externalContent </Users/yiges/Workstation/CodeSpace/DLSpace/hpkg/data/ontology.ttl> ] ;
+.
+ 
+<#tdbGraph> rdf:type tdb:GraphTDB ;
+tdb:dataset <#tdbdataset> ;
+.
+ 
+<#tdbdataset> rdf:type tdb:DatasetTDB ;
+tdb:location "/Users/yiges/Workstation/CodeSpace/DLSpace/hpkg/data/tdb" ;
+ja:context [ ja:cxtName "arq:queryTimeout" ; ja:cxtValue "1000" ] ;
+.
+
