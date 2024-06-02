@@ -81,7 +81,7 @@ cd ./server/apache-jena-fuseki-5.0.0
 
 ### Configure OpenAI API
 
-在 `./utils/llm/config.py` 中配置您的 OpenAI API Key(可以是任何兼容 OpenAI API 的大模型 API)：
+在 `./utils/llm/config.py` 中配置您的 OpenAI API Key(可以是任何兼容 OpenAI API 的大模型 API，例如 Moonshot API)：
 
 ```python
 config = {
@@ -90,6 +90,8 @@ config = {
     'model': 'xxx',
 }
 ```
+
+如果需要使用其它 API，例如智谱清言的 API，推荐使用 [这个仓库](https://github.com/tian-minghui/openai-style-api.git) 私有化搭建一个 API Router，将 OpenAI style 的 API 的请求转发到智谱清言的 API，这也是我们在项目中使用的方式（参考下面的项目结构图）。
 
 ### Run the Web Application
 
