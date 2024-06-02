@@ -45,7 +45,7 @@ HP-KG-Reader
 ├── assets
 ├── ...
 ├── server
-│   ├── apache-jena-fuseki-5.0.0
+│   ├── apache-jena-5.0.0
 │   └── apache-jena-fuseki-5.0.0
 ├── ...
 ```
