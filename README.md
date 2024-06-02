@@ -23,8 +23,6 @@ pip install gradio scrapy openai
 
 ### Data Preparation
 
-We've already crawled the data and post-processed it into `ttl` format in `./hpkg_scrapy/harry_potter.ttl`. You can also crawl the data by yourself after preparing the python environment below by running: `scrapy crawl property` inside `./hpkg_scrapy` directory.
-
 我们已经爬取了数据并将其后处理为 `ttl` 格式，存储在 `./hpkg_scrapy/harry_potter.ttl` 中。您也可以通过一下命令自己爬取数据并进行处理：
 
 
