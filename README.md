@@ -81,7 +81,7 @@ cd ./server/apache-jena-fuseki-5.0.0
 
 ### Configure OpenAI API
 
-在 `./utils/llm/config.py` 中配置您的 OpenAI API Key：
+在 `./utils/llm/config.py` 中配置您的 OpenAI API Key(可以是任何兼容 OpenAI API 的大模型 API)：
 
 ```python
 config = {
