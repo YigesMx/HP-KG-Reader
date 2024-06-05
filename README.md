@@ -103,7 +103,7 @@ python app.py
 
 ## Overall Structure
 
-以下是我们的项目的整体结构图。
+以下是我们的项目的整体结构图，绿色部分为我们实现或组织的部分，蓝色及其他颜色部分为我们使用的第三方库或服务的组成。
 
 ![overall_structure](./assets/framework.drawio.png)
 
